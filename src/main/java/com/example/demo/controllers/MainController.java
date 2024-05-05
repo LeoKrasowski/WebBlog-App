@@ -13,4 +13,10 @@ public class MainController {
         model.addAttribute("message", "Hello, Thymeleaf!");
         return "index"; // This will resolve to index.html in templates directory
     }
+    
+    @GetMapping("/support")
+    public String support(Model model) {
+    	model.addAttribute("message", "Support");
+    	return "support";
+    }
 }
